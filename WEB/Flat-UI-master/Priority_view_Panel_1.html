@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+        <style>
+    
+    .float-right {
+    	float: right;
+    	
+    }
+
+	p {
+		display: inline;
+	}
+	
+	.table {
+		margin-top: 15px;
+	
+	}
+	
+	.inline-block {
+	display: inline-block;
+	
+	}
+            
+    #background {
+        background-image: url(images/grass.png);
+        background-repeat: repeat-x;
+    }
+
+    	
+    </style>
+    
+  </head>
+   <body>
+  
+  <div class="modal" id="filterPopUp">
+   				
+   				<div class="modal-dialog">
+   					
+   					<div class="modal-content">
+   					
+   						<div class="modal-header">
+   						
+   							<button class="close" data-dismiss="modal">x</button>
+   							
+   							<h4 class="modal-title">Select Filters</h4>
+   						
+   						</div><!-- end modal-header -->
+   						
+   						<div class="modal-body">
+   						
+   							All Statuses</br>
+   							New</br>
+   							Contact attempt1</br>
+   							Contact attempt2</br>
+   							Contact attempt3</br>
+   							Contact attempt4</br>
+   							Contact attempt5</br>
+   						
+   						</div><!-- end modal-body -->
+   						
+   						<div class="modal-footer">
+   							
+   							<button class="btn btn-default" data-dismiss="modal">Cancel</button>
+   							<button class="btn btn-success" data-dismiss="modal">Save</button>
+   						
+   						</div><!-- end modal-footer-->
+   					
+   					</div><!-- end modal-content-->
+   				
+   				</div><!-- end modal-dialog-->
+   			
+   			</div><!-- end modal-->
+
+    <div id="background">
+
+  
+    <div class="jumbotron">
+    
+  		
+  		<div class="float-right">
+  		
+  			<p>Help & Support | Sign out<p>
+  		
+  		</div>
+  		
+  		<h2>Velocify</h2>
+  	
+  		
+  		<form class="form-inline float-right">
+
+			<div class="form-group">
+	
+				<input name="search" type="search" placeholder="Search" class="form-control"><span class="glyphicon glyphicon-align-search">
+		
+			</div>
+			
+			in
+		
+			<div class="form-group">
+	
+				<div class="btn-group">
+  					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Select Field <span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu" role="menu">
+    					<li><a href="#">Lead ID</a></li>
+    					<li><a href="#">Any Phone</a></li>
+    					<li><a href="#">Any field</a></li>
+    					<li class="divider"></li>
+    				<li><a href="#">Lots more...</a></li>
+  					</ul>
+				</div>
+		
+			</div>
+		
+			<div class="form-group">
+		
+				<input type="submit" value="Go" class="btn btn-success" />
+		
+			</div>
+		
+	</form>
+	
+  		
+	</div><!--end jombotron -->
+	
+	<div class="container-fluid">
+	
+	<button type="button" id="buttonMenu" class="btn btn-primary float-right">
+  				
+  			<span class="glyphicon glyphicon-align-justify"></span> Menu
+  					
+  		</button> 		
+	
+	<ul class="nav nav-tabs" role="tablist">
+  		<li><a href="#">Dashboard</a></li>
+  		<li class="active"><a href="#">Priority Leads</a></li>
+  		<li><a href="#">Normal Leads</a></li>
+	</ul>
+    </div><!-- end container-fluid-->
+
+    <div class="container">
+    
+    	<div class="panel panel-primary">
+  			<div class="panel-heading">
+    			<h3 class="panel-title">Priority lead</h3>
+  			</div>
+  			<div class="panel-body">
+    			<h2 class="inline-block"><span class="glyphicon glyphicon-user"> Johnny Appleseed</h2><img class="float-right" height="64" width="64" src="images/icons/png/Calendar.png"/>
+    			<table class="table">
+    			<tr><td><h4>Last contacted</h4> <span class="glyphicon glyphicon-calendar"> 24/12/2013 12:00AM</td><td><h4>Local weather:</h4> <span class="glyphicon glyphicon-certificate"> Sunshine</td></tr>
+    			<tr><td><h4>Loan amount</h4> <span class="glyphicon glyphicon-usd">250k</td><td><h4>Loan Status:</h4> <span class="glyphicon glyphicon-ok"> Closing</td></tr>
+    			<tr><td><h4>Last Action:</h4> <span class="glyphicon glyphicon-thumbs-up"> Submitted paperwork</td><td><h4>Notes:</h4> </td></tr>
+    			</table>
+    			
+    			<div class="btn-group">
+  					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-earphone"></span> Call 310-555-5555</button>
+  					<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+    				<span class="caret"></span>
+    				<span class="sr-only">Toggle Dropdown</span>
+  				</button>
+  				<ul class="dropdown-menu" role="menu">
+    				<li><a href="#">Call 555-222-2222</a></li>
+    				<li><a href="#">Call 310-123-9999</a></li>
+  				</ul>
+				</div><!-- end split button -->
+				
+  			</div>
+		</div><!-- end panel-->
+		
+		</div><!-- end container-->
+		
+		<div class="container-fluid">
+		
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Priority leads</h3>
+  				</div>
+  			<div class="panel-body">
+   
+   			<div id="filters">
+   			<a href=""  data-toggle="modal" data-target="#filterPopUp">Status | Groups | Users | Campaigns | Timeframe</a>
+   			
+   			<button class="btn btn-xs btn-info">GO</button>
+   			
+   			</div><!-- end filters -->
+   			
+   			
+    
+   		<table class="table table-hover">
+	
+			<tr><th>ID</th><th>Date added</th><th>Time Zone</th><th>Last Assignment / Distribution Date</th><th>Last Action Date</th><th>Status</th><th>First Name</th><th>Last Name</th><th>State</th><th>Day Phone</th><th>Evening Phone</th><th>Loan Amount</th><th>Loan Type</th><th>Loan Purpose</th><th>User</th><th>Quick Action</th><th>Default Action</th><th>Campaign</th></tr>
+		
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+		
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+			
+			<tr><td>12445</td><td>20/01/2014 12:03PM</td><td>Pacific</td><td></td><td></td><td>New</td><td>Johnny</td><td>Appleseed</td><td>CA</td><td>310-555-5555</td><td>555-222-2222</td><td>$250k</td><td>30 Fixed</td><td>Home Purchase</td><td>PFord</td><td></td><td></td><td>TV</td></tr>
+	
+		</table>
+		
+		  	</div><!-- end panel-body-->
+			</div><!-- end panel-->
+		
+		<div><!-- end container -->
+            
+
+    </div><!-- end background -->
+
+  
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+  </body>
+</html>
