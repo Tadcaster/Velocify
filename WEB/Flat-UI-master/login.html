@@ -31,10 +31,11 @@
         min-height: 100%;
     }
         
-    #login-box {
-        width: 300px;
-        margin: auto;
-        margin-top: 10%;
+    #login-box  {
+        width: 600px;
+        margin-top: 5%;
+        margin-left: 5%;
+        height: 300px;
         
     }
         
@@ -42,6 +43,21 @@
     
         float: right;
     }
+        
+    .inline {
+        display: inline-block;  
+        
+    }
+        
+    #loginControls {
+        padding-top: 52px;   
+        
+    }
+    
+    #DIQInfo {
+        border-right: 1px solid #afafaf;   
+        
+    }#afafaf
   
     </style>
       
@@ -50,26 +66,48 @@
     <div id="background" class="container-fluid">
         
         <h1>Velocify</h1>
+        
 
-        <div class="panel panel-primary" id="login-box">
+
+        <div class="panel panel-primary inline" id="login-box">
+            
+            
             
             <div class="panel-heading">
                 
-                    <h3 class="panel-title">Login to Velocify</h3>
+                    <h2 class="panel-title">Login to Velocify</h2>
                 
             </div><!-- end panel-heading -->
         
             <div class="panel-body">
                 
+                <div class="col-lg-6" id="DIQInfo">
+                
+                <h4>Velocify Dial-IQ</h4>
+                
+                <ul>
+                <li>Faster Response</li>
+                <li>More Calls</li>
+                <li>More Revenue</li>                
+                </ul>
+                
                 </br>
                 
-                <input class="form-control" type="text" id="username" placeholder="Enter Username"></br>
+                <button class="btn btn-info" id="learnMore">Learn more</button></br> 
+
+                </div><!-- end col lg 6 -->
+
+                <div class="col-lg-6" id="loginControls">
                 
-                <input class="form-control" type="password" id="username" placeholder="Enter Password"></br>
+                    <input class="form-control" type="text" id="username" placeholder="Enter Username"></br>
+                    
+                    <input class="form-control" type="password" id="username" placeholder="Enter Password"></br>
                 
-                <button class="btn btn-success" id="login-btn">Login</button></br>
+                    <button class="btn btn-success" id="login-btn">Login</button></br>
+
+                </div><!-- end col lg 6 -->
                 
-            </div><!-- end panel content -->
+            </div><!-- end panel body -->
         
         </div><!-- end panel -->
       
