@@ -130,7 +130,7 @@
                 <img class="tile-image big-illustration" alt="Compas" src="images/icons/svg/pencils.svg"></img>
                 <h3 class="tile-title">Case Study 1</h3>
                 <p>Here be details about this case study...</p>
-                <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Learn More...</a>
+                <a class="btn btn-primary btn-large btn-block" id="btnCase1" href="">Learn More...</a>
             </div>
 
         </div><!-- end col-xs-3 -->
@@ -141,7 +141,7 @@
                 <img class="tile-image big-illustration" alt="Compas" src="images/icons/svg/compas.svg"></img>
                 <h3 class="tile-title">Case Study 4</h3>
                 <p>Here be details about this case study...</p>
-                <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Learn More...</a>
+                <a class="btn btn-primary btn-large btn-block"  id="btnCase2" href="">Learn More...</a>
             </div>
 
         </div><!-- end col-xs-3 -->
@@ -152,7 +152,7 @@
                 <img class="tile-image big-illustration" alt="Compas" src="images/icons/svg/clocks.svg"></img>
                 <h3 class="tile-title">Case Study 2</h3>
                 <p>Here be details about this case study...</p>
-                <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Learn More...</a>
+                <a class="btn btn-primary btn-large btn-block"  id="btnCase3" href="">Learn More...</a>
             </div>
 
         </div><!-- end col-xs-3 -->
@@ -163,7 +163,7 @@
                 <img class="tile-image big-illustration" alt="Compas" src="images/icons/svg/loop.svg"></img>
                 <h3 class="tile-title">Case Study 4</h3>
                 <p>Here be details about this case study...</p>
-                <a class="btn btn-primary btn-large btn-block" href="http://designmodo.com/flat">Learn More...</a>
+                <a class="btn btn-primary btn-large btn-block"  id="btnCase4" href="">Learn More...</a>
             </div>
 
         </div><!-- end col-xs-3 -->
@@ -174,7 +174,7 @@
 
     <!-- Load JS here for greater good =============================-->
 
-<!-- here be the Show/Hide JS for the contect divs -->
+<!-- here be the Show/Hide JS for the content divs -->
 
     <script>
 		document.getElementById("home").onclick=function()  {
@@ -287,6 +287,51 @@
 
 <!-- END here be the Show/Hide JS for the contect divs -->
 
+<!-- here be the Show/Hide JS for the panel lean more btns -->
+
+    <script>
+		document.getElementById("btnCase1").onclick=function()  {
+			
+            document.getElementById("case1Page").style.display="block";
+            document.getElementById("case2Page").style.display="none";
+            document.getElementById("case3Page").style.display="none";
+            document.getElementById("case4Page").style.display="none";
+            document.getElementById("homePage").style.display="none";
+            document.getElementById("contact").style.display="none";
+            
+        document.getElementById("btnCase2").onclick=function()  {
+			
+            document.getElementById("case1Page").style.display="none";
+            document.getElementById("case2Page").style.display="block";
+            document.getElementById("case3Page").style.display="none";
+            document.getElementById("case4Page").style.display="none";
+            document.getElementById("homePage").style.display="none";
+            document.getElementById("contact").style.display="none";
+            document.getElementById("homePage").style.display="none";
+            document.getElementById("contact").style.display="none";
+            
+        document.getElementById("btnCase3").onclick=function()  {
+			
+            document.getElementById("case1Page").style.display="none";
+            document.getElementById("case2Page").style.display="none";
+            document.getElementById("case3Page").style.display="block";
+            document.getElementById("case4Page").style.display="none";
+            document.getElementById("homePage").style.display="none";
+            document.getElementById("contact").style.display="none";
+            
+        document.getElementById("btnCase4").onclick=function()  {
+			
+            document.getElementById("case1Page").style.display="none";
+            document.getElementById("case2Page").style.display="none";
+            document.getElementById("case3Page").style.display="none";
+            document.getElementById("case4Page").style.display="block";
+            document.getElementById("homePage").style.display="none";
+            document.getElementById("contact").style.display="none";
+            
+        }
+
+<!-- here be the Show/Hide JS for the panel lean more btns -->
+    
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
