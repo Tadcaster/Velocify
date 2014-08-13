@@ -23,7 +23,6 @@
     
     .float-right {
     	float: right;
-    	
     }
 
 	p {
@@ -32,23 +31,15 @@
 	
 	.table {
 		margin-top: 15px;
-	
 	}
 	
 	.inline-block {
-	display: inline-block;
-	
+	   display: inline-block;
 	}
-            
-    #background {
-        background-image: url(images/grass.png);
-        background-repeat: repeat-x;
-    }
             
     img {
     margin-left: 15px;   
     }
-
     	
     </style>
     
@@ -162,33 +153,51 @@
     </div><!-- end container-fluid-->
 
     <div class="container">
+        
+        <div class="panel-group" id="accordian">
     
     	<div class="panel panel-primary">
+            
   			<div class="panel-heading">
-    			<h3 class="panel-title">Priority lead</h3>
+                
+    			<h4 class="panel-title">
+                    
+                    <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian" href="#CollapseOne">Priority Lead</a>             
+                
+                </h4>
+                
   			</div>
-  			<div class="panel-body">
-    			<h2 class="inline-block"><span class="glyphicon glyphicon-user"> Johnny Appleseed</h2><img class="float-right" height="64" width="64" src="images/icons/png/Calendar.png"/> <img class="float-right" height="64" width="64"src="images/icons/png/Watches.png"/>
-    			<table class="table">
-    			<tr><td><h4>Last contacted</h4> <span class="glyphicon glyphicon-calendar"> 24/12/2013 12:00AM</td><td><h4>Local weather:</h4> <span class="glyphicon glyphicon-certificate"> Sunshine</td></tr>
-    			<tr><td><h4>Loan amount</h4> <span class="glyphicon glyphicon-usd">250k</td><td><h4>Loan Status:</h4> <span class="glyphicon glyphicon-ok"> Closing</td></tr>
-    			<tr><td><h4>Last Action:</h4> <span class="glyphicon glyphicon-thumbs-up"> Submitted paperwork</td><td><h4>Notes:</h4> </td></tr>
-    			</table>
-    			
-    			<div class="btn-group">
-  					<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-earphone"></span> Call 310-555-5555</button>
-  					<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-    				<span class="caret"></span>
-    				<span class="sr-only">Toggle Dropdown</span>
-  				</button>
-  				<ul class="dropdown-menu" role="menu">
-    				<li><a href="#">Call 555-222-2222</a></li>
-    				<li><a href="#">Call 310-123-9999</a></li>
-  				</ul>
-				</div><!-- end split button -->
-				
-  			</div>
+            
+  			<div class="panel-collapse collapse" id="CollapseOne">
+                
+                <div class="panel-body">
+                
+                    <h2 class="inline-block"><span class="glyphicon glyphicon-user"> Johnny Appleseed</h2><img class="float-right" height="64" width="64" src="images/icons/png/Calendar.png"/> <img class="float-right" height="64" width="64"src="images/icons/png/Watches.png"/>
+                    <table class="table">
+                    <tr><td><h4>Last contacted</h4> <span class="glyphicon glyphicon-calendar"> 24/12/2013 12:00AM</td><td><h4>Local weather:</h4> <span class="glyphicon glyphicon-certificate"> Sunshine</td></tr>
+                    <tr><td><h4>Loan amount</h4> <span class="glyphicon glyphicon-usd">250k</td><td><h4>Loan Status:</h4> <span class="glyphicon glyphicon-ok"> Closing</td></tr>
+                    <tr><td><h4>Last Action:</h4> <span class="glyphicon glyphicon-thumbs-up"> Submitted paperwork</td><td><h4>Notes:</h4> </td></tr>
+                    </table>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-earphone"></span> Call 310-555-5555</button>
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Call 555-222-2222</a></li>
+                                <li><a href="#">Call 310-123-9999</a></li>
+                            </ul>
+                    </div><!-- end split button -->
+                        
+				</div><!-- panel body -->
+  			
+            </div><!-- End panel-collapse -->
+                
 		</div><!-- end panel-->
+            
+    </div><!-- End accordian -->
 		
 		</div><!-- end container-->
 		
