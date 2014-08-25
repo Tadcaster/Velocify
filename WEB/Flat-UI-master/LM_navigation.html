@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+      
+    <style>
+      
+        .nav {
+            display: inline-block;         
+          }
+
+        .button {
+             margin-left: 20px;   
+            }
+
+        .float-right {
+            float: right;
+        }
+
+        p {
+            display: inline;
+        }
+
+        .table {
+            margin-top: 15px;
+        }
+
+        .inline-block {
+           display: inline-block;
+        }
+        
+        .button {
+            margin-top: -40px;   
+        }
+          
+    </style>
+      
+  </head>
+    
+  <body>
+      
+        <div class="jumbotron">
+    
+  		
+  		<div class="float-right">
+  		
+  			<p>Help & Support | Sign out<p>
+  		
+  		</div>
+  		
+  		<h2>Velocify</h2>
+  	
+  		
+  		<form class="form-inline float-right">
+
+			<div class="form-group">
+	
+				<input name="search" type="search" placeholder="Search" class="form-control"><span class="glyphicon glyphicon-align-search">
+		
+			</div>
+			
+			in
+		
+			<div class="form-group">
+	
+				<div class="btn-group">
+  					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Select Field <span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu" role="menu">
+    					<li><a href="#">Lead ID</a></li>
+    					<li><a href="#">Any Phone</a></li>
+    					<li><a href="#">Any field</a></li>
+    					<li class="divider"></li>
+    				<li><a href="#">Lots more...</a></li>
+  					</ul>
+				</div>
+		
+			</div>
+		
+			<div class="form-group">
+		
+				<input type="submit" value="Go" class="btn btn-success" />
+		
+			</div>
+		
+	</form>
+	
+  		
+	</div><!--end jombotron -->
+        
+        <ul class="nav nav-pills">
+            
+            <li><a href="#"><span class="glyphicon glyphicon-justify"></span> Menu</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Lead</a>
+                    <ul class="dropdown-menu">
+                        <li>Priority View</li>
+                        <li>Normal View</li>
+                    </ul><!-- END dropdown menu -->
+                
+        </ul><!-- END nav-pills -->
+        
+        <button type="button" class="btn btn-primary button">Get Lead</button>
+        
+    </div><!-- /.container -->
+
+
+    <!-- Load JS here for greater good =============================-->
+    <script>
+		document.getElementById("status1").onmouseover=function()  {
+			
+			document.getElementById("pop1").style.display="block";
+        }
+		document.getElementById("status1").onmouseout=function()  {
+			
+			document.getElementById("pop1").style.display="none";
+        }
+	</script>  
+      
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+  </body>
+</html>
